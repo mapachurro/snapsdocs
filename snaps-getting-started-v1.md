@@ -36,18 +36,17 @@ There are a number of simple snaps available for you to learn from and begin to 
 
 Flask, as described [here](LINK TO FLASK PAGE REQUIRED HERE), is a distribution channel for developmental, experimental, kooky stuff for MetaMask, and Snaps is the first feature to be released through it. 
 
-* Start by [downloading Flask] (LINK HERE)
-* in Chrome, click on the plugins puzzle piece, and then 'Manage Extensions'
-* make sure 'Developer Mode' is enabled on the far right, then click 'Load unpacked' on the far left
-* navigate to the downloaded Flask file, and click 'Select Folder'
+* Start by downloading [Flask](LINK HERE) and adding it to Chrome
   
-At this point, you should see Flask added to your browser as an extension. If you currently have another build of MetaMask installed in your browser, it's probably best to disable the extension (but make sure you have your Secret Recovery Phrase backed up!)
+At this point, you should see Flask added to your browser as an extension. If you currently have another build of MetaMask installed in your browser, disable it (but make sure you have your Secret Recovery Phrase backed up!).
 
 ### Serving a snap to your local environment
 
-Now that you have Flask in your browser, it's time to find something to plug into it.
+Now that you have Flask in your browser, it's time to find something to plug into it. If you don't want to download any code for the moment, check out the example snap [deployed here](https://metamask.github.io/snap-template/) and follow the instructions below under 'Interacting with the Snap'.
 
-Open up a new Terminal window, and do the following:
+If you're ready to jump in and see how a Snap looks on the backend, follow the steps below!
+
+Open up a new terminal window, and do the following:
 
 * clone the snaps monorepo [here](https://github.com/MetaMask/snaps-skunkworks)
 * `cd` into the repo, and run `nvm use 14.15` to make sure you're using the right version of nodejs
@@ -55,11 +54,11 @@ Open up a new Terminal window, and do the following:
 * install [@metamask/snaps-cli](https://npmjs.com/package/@metamask/snaps-cli) package locally: `yarn add snaps-cli`
 * run `yarn mm-snap serve`
 
-You should now have two terminal windows open, one running Flask, and the other one serving the Hello Snap. Time to see the functionality in action!
+Your terminal window should now be serving the example Snap locally. Time to see the functionality in action!
 
 ### Interacting with the snap
 
-Open up a browser window, and navigate to `http://localhost:8080`.
+If you're serving the snap locally, open up a browser window, and navigate to `http://localhost:8080`.
 
 You should see a simple message, explaining the functionality of the snap, and two buttons. Start by clicking the `Connect` button; your Flask extension should pop up, and require you to click through two notifications.
 
